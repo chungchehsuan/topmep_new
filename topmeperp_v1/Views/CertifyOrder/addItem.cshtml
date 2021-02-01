@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "AddItem";
+    Layout = "~/Views/Shared/MenuPage.cshtml";
+
+
+   /* var qty = "";
+    int x = 0;
+    if (IsPost)
+    {
+        qty = Request.Form["qty"];
+        string sql = "INSERT INTO PLAN_CERT_ORDER_ITEM (CERT_ORD_ITEM_ID,ORDER_QTY) VALUES(2,"+qty+")";
+        try
+        {
+            using (var context = new topmepEntities())
+            {
+                x = context.Database.ExecuteSqlCommand(sql);
+                x = context.SaveChanges();
+            }
+        }
+        catch (Exception e) {
+            Console.Write(e.StackTrace);
+        }
+    }*/
+}
+
+<style>
+    table, th, td {
+        border: 1px solid blue;
+    }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+</style>
+
+<h2>addItem @ViewBag.projectId</h2>
+
+<div class="queryTable">
+    <form method="post" action="AddItem">
+        <input type="hidden" id="formID" name="formID" value=@ViewBag.projectID>
+        <table>
+            <tr>
+                <th>NO.</th>
+                <th>項次</th>
+                <th>項目説明</th>
+                <th>單位</th>
+                <th>合約數量</th>
+                <th>單價</th>
+                <th>前期數量</th>
+                <th>本期數量</th>
+                <th>本期金額</th>
+                <th>纍計數量</th>
+                <th>纍計金額</th>
+                <th>纍計%</th>
+            </tr>
+            @{ int i = 1;}
+            @{ List<topmeperp.Models.PLAN_CERT_ORDER_ITEM> itemlst = new List<PLAN_CERT_ORDER_ITEM>();}
+            @foreach (var item in ViewBag.lst)
+            {
+                itemlst.Add(new topmeperp.Models.PLAN_CERT_ORDER_ITEM { PLAN_ITEM_ID = @item.PLAN_ITEM_ID });
+            <tr>
+                <td data-th="NUM"><input type="text" name="plan_item_id" id="plan_item_id@(i)" value="@item.PLAN_ITEM_ID" readonly></td>
+                <td data-th="項次" id="項次@(i)"></td>
+                <td data-th="項目説明">@item.ITEM_DESC</td>
+                <td data-th="單位">m</td>
+                <td data-th="合約數量">@item.ITEM_QTY</td>
+                <td data-th="單價"><input type="text" name="unit_price" id="單價@(i)" value="@item.ITEM_UNIT_PRICE" readonly></td>
+                <td data-th="前期數量"></td>
+                <td data-th="本期數量"><input type="text" name="qty" id="@(i)" oninput="updateValue(this.id,this.value);" value=0></td>
+                <td data-th="本期金額" id="本期金額@(i)"></td>
+                <td data-th="纍計數量"></td>
+                <td data-th="纍計金額"></td>
+                <td data-th="纍計%">%</td>
+                <td type="hidden"><input type="hidden" id="itemID" name="itemID" value="@item.ITEM_ID"></td>
+                <td type="hidden"><input type="hidden" id="type" name="type" value="@item.TYPE_CODE"></td>
+                <td type="hidden"><input type="hidden" id="subType" name="subType" value="@item.SUB_TYPE_CODE"></td>
+                <td type="hidden"><input type="hidden" id="desc" name="desc" value="@item.ITEM_DESC"></td>
+            </tr>
+                i++;
+            }
+        </table>
+        <input type="submit" class="btn" id="save" value="儲存" />
+        <input type="button" class="btn btn-warning" value="送審">
+        <input type="button" class="btn btn-success" onclick="history.back()" value="回上一頁">
+    </form>
+</div>
+
+<script>
+    function updateValue(n, val) {
+        console.log(val);
+        console.log(document.getElementById("單價" + n).value);
+        document.getElementById("本期金額" + n).innerText = val * parseFloat(document.getElementById("單價"+n).value,10);
+    }
+</script>
+
+

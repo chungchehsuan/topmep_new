@@ -1,0 +1,61 @@
+﻿
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/MenuPage.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid blue;
+    }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+</style>
+
+<h2>Create @ViewBag.projectID</h2>
+
+<div class="queryTable">
+    <table>
+        <tr><th>NO.</th><th>合約類型</th><th>合約編號</th><th>廠商名稱</th><th>采購項目</th><th>驗收品相</th><th>驗收單號</th><th>功能</th></tr>
+        @{ int i = 1;}
+        @foreach (var item in ViewBag.lst)
+        {
+        <tr>
+            <td data-th="NUM">
+                @i
+            </td>
+            <td data-th="合約類型">
+                @if (item.ISWAGE != null)
+                {
+                    @ViewBag.dict[@item.ISWAGE]
+                }
+            </td>
+            <td data-th="合約編號">
+                @item.INQUIRY_FORM_ID
+            </td>
+            <td data-th="廠商名稱">
+                @item.SUPPLIER_ID
+            </td>
+            <td data-th="供應商名稱">
+                @item.FORM_NAME
+            </td>
+            <td data-th="驗收品相">
+                -
+            </td>
+            <td data-th="驗收單號">
+                -
+            </td>
+            <td data-th="功能">
+                <a href='@Url.Action("AddItem",new { id = item.INQUIRY_FORM_ID})'>建立估驗單</a>
+            </td>
+        </tr>
+            i++;
+        }
+    </table>
+
+</div>
+

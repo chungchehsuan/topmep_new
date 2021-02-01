@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MenuPage.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid blue;
+    }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+</style>
+
+@ViewBag.projectID
+<div class="page-header">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4>
+                <label>專案名稱：</label>
+                <label>@ViewBag.projectID</label>
+            </h4>
+            <label>供應商名稱：</label> <input type="text" /> <label>估驗單編號：</label><input type="text" /> <label>狀態：</label>
+            <select>
+                <option value="30">同意</option>
+                <option value="40">退回</option>
+            </select>
+            <button name="query" id="query" type="button" class="btn btn-info" onclick="getCertOrderList()">查詢</button>
+            <button type="button" class="btn btn-warning" onclick="location.href='@Url.Action("Create",new { id = @ViewBag.projectID})'; ">新增</button>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <h4>審核中的標單</h4>
+</div>
+
+<div>
+    <h4>未受審核的估驗單</h4>
+</div>
+
+<div class="queryTable">
+    <table>
+        <tr><th>編號</th><th>發包項目名稱</th><th>供應商名稱（受款人）</th><th>備注</th></tr>
+        @foreach (var item in ViewBag.lst)
+        {
+            <tr>
+                <td data-th="編號">@item.CERT_ORD_ID</td>
+                <td data-th="發包項目名稱">
+                    <!--Html.DisplayFor(modelItem => item.FORM_NAME)-->
+                </td>
+                <td data-th="供應商名稱">@item.SUPPLIER_ID</td>
+                <td data-th="備注"></td>
+            </tr>
+
+        }
+    </table>
+
+</div>
