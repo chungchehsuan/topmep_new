@@ -1,0 +1,1660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="topmepModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="topmepEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ENT_DEPARTMENT" EntityType="topmepModel.ENT_DEPARTMENT" />
+    <EntitySet Name="FIN_BANK_ACCOUNT" EntityType="topmepModel.FIN_BANK_ACCOUNT" />
+    <EntitySet Name="FIN_BANK_LOAN" EntityType="topmepModel.FIN_BANK_LOAN" />
+    <EntitySet Name="FIN_EXPENSE_BUDGET" EntityType="topmepModel.FIN_EXPENSE_BUDGET" />
+    <EntitySet Name="FIN_EXPENSE_FORM" EntityType="topmepModel.FIN_EXPENSE_FORM" />
+    <EntitySet Name="FIN_EXPENSE_ITEM" EntityType="topmepModel.FIN_EXPENSE_ITEM" />
+    <EntitySet Name="FIN_LOAN_TRANACTION" EntityType="topmepModel.FIN_LOAN_TRANACTION" />
+    <EntitySet Name="FIN_SUBJECT" EntityType="topmepModel.FIN_SUBJECT" />
+    <EntitySet Name="PLAN_ACCOUNT" EntityType="topmepModel.PLAN_ACCOUNT" />
+    <EntitySet Name="PLAN_BUDGET" EntityType="topmepModel.PLAN_BUDGET" />
+    <EntitySet Name="PLAN_CERT_ORDER_ITEM" EntityType="topmepModel.PLAN_CERT_ORDER_ITEM" />
+    <EntitySet Name="PLAN_CONTRACT_PROCESS" EntityType="topmepModel.PLAN_CONTRACT_PROCESS" />
+    <EntitySet Name="PLAN_COSTCHANGE_FORM" EntityType="topmepModel.PLAN_COSTCHANGE_FORM" />
+    <EntitySet Name="PLAN_COSTCHANGE_ITEM" EntityType="topmepModel.PLAN_COSTCHANGE_ITEM" />
+    <EntitySet Name="PLAN_DALIY_REPORT" EntityType="topmepModel.PLAN_DALIY_REPORT" />
+    <EntitySet Name="PLAN_DR_ITEM" EntityType="topmepModel.PLAN_DR_ITEM" />
+    <EntitySet Name="PLAN_DR_NOTE" EntityType="topmepModel.PLAN_DR_NOTE" />
+    <EntitySet Name="PLAN_DR_TASK" EntityType="topmepModel.PLAN_DR_TASK" />
+    <EntitySet Name="PLAN_DR_TEMPWORK" EntityType="topmepModel.PLAN_DR_TEMPWORK" />
+    <EntitySet Name="PLAN_DR_WORKER" EntityType="topmepModel.PLAN_DR_WORKER" />
+    <EntitySet Name="PLAN_ESTIMATION_FORM" EntityType="topmepModel.PLAN_ESTIMATION_FORM" />
+    <EntitySet Name="PLAN_ESTIMATION_HOLDPAYMENT" EntityType="topmepModel.PLAN_ESTIMATION_HOLDPAYMENT" />
+    <EntitySet Name="PLAN_ESTIMATION_INVOICE" EntityType="topmepModel.PLAN_ESTIMATION_INVOICE" />
+    <EntitySet Name="PLAN_ESTIMATION_ITEM" EntityType="topmepModel.PLAN_ESTIMATION_ITEM" />
+    <EntitySet Name="PLAN_ESTIMATION_PAYMENT_TRANSFER" EntityType="topmepModel.PLAN_ESTIMATION_PAYMENT_TRANSFER" />
+    <EntitySet Name="PLAN_ESTIMATION2PURCHASE" EntityType="topmepModel.PLAN_ESTIMATION2PURCHASE" />
+    <EntitySet Name="PLAN_INDIRECT_COST" EntityType="topmepModel.PLAN_INDIRECT_COST" />
+    <EntitySet Name="PLAN_INVOICE" EntityType="topmepModel.PLAN_INVOICE" />
+    <EntitySet Name="PLAN_ITEM" EntityType="topmepModel.PLAN_ITEM" />
+    <EntitySet Name="PLAN_ITEM_DELIVERY" EntityType="topmepModel.PLAN_ITEM_DELIVERY" />
+    <EntitySet Name="PLAN_ITEM2_SUP_INQUIRY" EntityType="topmepModel.PLAN_ITEM2_SUP_INQUIRY" />
+    <EntitySet Name="PLAN_OTHER_PAYMENT" EntityType="topmepModel.PLAN_OTHER_PAYMENT" />
+    <EntitySet Name="PLAN_PAYMENT_TERMS" EntityType="topmepModel.PLAN_PAYMENT_TERMS" />
+    <EntitySet Name="PLAN_PURCHASE_REQUISITION" EntityType="topmepModel.PLAN_PURCHASE_REQUISITION" />
+    <EntitySet Name="PLAN_PURCHASE_REQUISITION_ITEM" EntityType="topmepModel.PLAN_PURCHASE_REQUISITION_ITEM" />
+    <EntitySet Name="PLAN_SITE_BUDGET" EntityType="topmepModel.PLAN_SITE_BUDGET" />
+    <EntitySet Name="PLAN_SUP_INQUIRY" EntityType="topmepModel.PLAN_SUP_INQUIRY" />
+    <EntitySet Name="PLAN_SUP_INQUIRY_ITEM" EntityType="topmepModel.PLAN_SUP_INQUIRY_ITEM" />
+    <EntitySet Name="PLAN_TASK" EntityType="topmepModel.PLAN_TASK" />
+    <EntitySet Name="PLAN_TASK_DONE" EntityType="topmepModel.PLAN_TASK_DONE" />
+    <EntitySet Name="PLAN_TASK2MAPITEM" EntityType="topmepModel.PLAN_TASK2MAPITEM" />
+    <EntitySet Name="PLAN_VALUATION_FORM" EntityType="topmepModel.PLAN_VALUATION_FORM" />
+    <EntitySet Name="REF_TYPE_MAIN" EntityType="topmepModel.REF_TYPE_MAIN" />
+    <EntitySet Name="REF_TYPE_SUB" EntityType="topmepModel.REF_TYPE_SUB" />
+    <EntitySet Name="SYS_FUNCTION" EntityType="topmepModel.SYS_FUNCTION" />
+    <EntitySet Name="SYS_KEY_SERIAL" EntityType="topmepModel.SYS_KEY_SERIAL" />
+    <EntitySet Name="SYS_MESSAGE" EntityType="topmepModel.SYS_MESSAGE" />
+    <EntitySet Name="SYS_PARA" EntityType="topmepModel.SYS_PARA" />
+    <EntitySet Name="SYS_PRIVILEGE" EntityType="topmepModel.SYS_PRIVILEGE" />
+    <EntitySet Name="SYS_ROLE" EntityType="topmepModel.SYS_ROLE" />
+    <EntitySet Name="SYS_USER" EntityType="topmepModel.SYS_USER" />
+    <EntitySet Name="TND_FILE" EntityType="topmepModel.TND_FILE" />
+    <EntitySet Name="TND_MAP_DEVICE" EntityType="topmepModel.TND_MAP_DEVICE" />
+    <EntitySet Name="TND_MAP_FP" EntityType="topmepModel.TND_MAP_FP" />
+    <EntitySet Name="TND_MAP_FW" EntityType="topmepModel.TND_MAP_FW" />
+    <EntitySet Name="TND_MAP_LCP" EntityType="topmepModel.TND_MAP_LCP" />
+    <EntitySet Name="TND_MAP_PEP" EntityType="topmepModel.TND_MAP_PEP" />
+    <EntitySet Name="TND_MAP_PLU" EntityType="topmepModel.TND_MAP_PLU" />
+    <EntitySet Name="TND_PROJECT" EntityType="topmepModel.TND_PROJECT" />
+    <EntitySet Name="TND_PROJECT_FORM" EntityType="topmepModel.TND_PROJECT_FORM" />
+    <EntitySet Name="TND_PROJECT_FORM_ITEM" EntityType="topmepModel.TND_PROJECT_FORM_ITEM" />
+    <EntitySet Name="TND_PROJECT_ITEM" EntityType="topmepModel.TND_PROJECT_ITEM" />
+    <EntitySet Name="TND_SUP_CONTACT_INFO" EntityType="topmepModel.TND_SUP_CONTACT_INFO" />
+    <EntitySet Name="TND_SUP_MATERIAL_RELATION" EntityType="topmepModel.TND_SUP_MATERIAL_RELATION" />
+    <EntitySet Name="TND_SUPPLIER" EntityType="topmepModel.TND_SUPPLIER" />
+    <EntitySet Name="TND_TASKASSIGN" EntityType="topmepModel.TND_TASKASSIGN" />
+    <EntitySet Name="TND_WAGE" EntityType="topmepModel.TND_WAGE" />
+    <EntitySet Name="WF_PORCESS_TASK" EntityType="topmepModel.WF_PORCESS_TASK" />
+    <EntitySet Name="WF_PROCESS" EntityType="topmepModel.WF_PROCESS" />
+    <EntitySet Name="WF_PROCESS_ACTIVITY" EntityType="topmepModel.WF_PROCESS_ACTIVITY" />
+    <EntitySet Name="WF_PROCESS_REQUEST" EntityType="topmepModel.WF_PROCESS_REQUEST" />
+    <EntitySet Name="PLAN_CERT_ORDER" EntityType="topmepModel.PLAN_CERT_ORDER" />
+    <EntitySet Name="vw_MAP_FW" EntityType="topmepModel.vw_MAP_FW" />
+    <EntitySet Name="vw_MAP_PLU" EntityType="topmepModel.vw_MAP_PLU" />
+    <AssociationSet Name="FK_PLAN_COS_REFERENCE_PLAN_COS" Association="topmepModel.FK_PLAN_COS_REFERENCE_PLAN_COS">
+      <End Role="PLAN_COSTCHANGE_FORM" EntitySet="PLAN_COSTCHANGE_FORM" />
+      <End Role="PLAN_COSTCHANGE_ITEM" EntitySet="PLAN_COSTCHANGE_ITEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PLAN_EST_REFERENCE_PLAN_EST" Association="topmepModel.FK_PLAN_EST_REFERENCE_PLAN_EST">
+      <End Role="PLAN_ESTIMATION_FORM" EntitySet="PLAN_ESTIMATION_FORM" />
+      <End Role="PLAN_ESTIMATION_HOLDPAYMENT" EntitySet="PLAN_ESTIMATION_HOLDPAYMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PLAN_IND_REFERENCE_TND_PROJ" Association="topmepModel.FK_PLAN_IND_REFERENCE_TND_PROJ">
+      <End Role="TND_PROJECT" EntitySet="TND_PROJECT" />
+      <End Role="PLAN_INDIRECT_COST" EntitySet="PLAN_INDIRECT_COST" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIVILEGE_SYS_FUNCTION" Association="topmepModel.FK_SYS_PRIVILEGE_SYS_FUNCTION">
+      <End Role="SYS_FUNCTION" EntitySet="SYS_FUNCTION" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_PRIVILEGE_SYS_ROLE" Association="topmepModel.FK_SYS_PRIVILEGE_SYS_ROLE">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_PRIVILEGE" EntitySet="SYS_PRIVILEGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SYS_USER_SYS_ROLE" Association="topmepModel.FK_SYS_USER_SYS_ROLE">
+      <End Role="SYS_ROLE" EntitySet="SYS_ROLE" />
+      <End Role="SYS_USER" EntitySet="SYS_USER" />
+    </AssociationSet>
+    <EntitySet Name="AggregatedCounter" EntityType="topmepModel.AggregatedCounter" />
+    <EntitySet Name="Counter" EntityType="topmepModel.Counter" />
+    <EntitySet Name="Hash" EntityType="topmepModel.Hash" />
+    <EntitySet Name="Job" EntityType="topmepModel.Job" />
+    <EntitySet Name="JobParameter" EntityType="topmepModel.JobParameter" />
+    <EntitySet Name="JobQueue" EntityType="topmepModel.JobQueue" />
+    <EntitySet Name="List" EntityType="topmepModel.List" />
+    <EntitySet Name="Schema" EntityType="topmepModel.Schema" />
+    <EntitySet Name="Server" EntityType="topmepModel.Server" />
+    <EntitySet Name="Set" EntityType="topmepModel.Set" />
+    <EntitySet Name="State" EntityType="topmepModel.State" />
+    <AssociationSet Name="FK_HangFire_JobParameter_Job" Association="topmepModel.FK_HangFire_JobParameter_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="JobParameter" EntitySet="JobParameter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HangFire_State_Job" Association="topmepModel.FK_HangFire_State_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="State" EntitySet="State" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ENT_DEPARTMENT">
+    <Key>
+      <PropertyRef Name="DEP_ID" />
+    </Key>
+    <Property Name="DEP_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DEPT_CODE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DEPT_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PARENT_ID" Type="Int64" Nullable="false" />
+    <Property Name="DESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MANAGER" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FIN_BANK_ACCOUNT">
+    <Key>
+      <PropertyRef Name="BANK_ACCOUNT_ID" />
+    </Key>
+    <Property Name="BANK_ACCOUNT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BANK_ID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BRANCH_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="REF_ACCOUNT_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CUR_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CUR_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="FIN_BANK_LOAN">
+    <Key>
+      <PropertyRef Name="BL_ID" />
+    </Key>
+    <Property Name="BL_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BANK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BANK_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BRANCH_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="REF_ACCOUNT_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="START_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PERIOD_COUNT" Type="Int32" />
+    <Property Name="QUOTA" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AR_PAYBACK_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CUM_AR_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="QUOTA_AVAILABLE_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="QUOTA_RECYCLABLE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="IS_SUPPLIER" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FIN_EXPENSE_BUDGET">
+    <Key>
+      <PropertyRef Name="EXPENSE_BUDGET_ID" />
+    </Key>
+    <Property Name="EXPENSE_BUDGET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BUDGET_YEAR" Type="Int32" />
+    <Property Name="BUDGET_MONTH" Type="Int32" />
+    <Property Name="SUBJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CURRENT_YEAR" Type="Int32" />
+  </EntityType>
+  <EntityType Name="FIN_EXPENSE_FORM">
+    <Key>
+      <PropertyRef Name="EXP_FORM_ID" />
+    </Key>
+    <Property Name="EXP_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OCCURRED_YEAR" Type="Int32" />
+    <Property Name="OCCURRED_MONTH" Type="Int32" />
+    <Property Name="PAYMENT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Int32" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PASS_CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PASS_CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="APPROVE_CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="APPROVE_CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="JOURNAL_CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="JOURNAL_CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REJECT_DESC" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PAYEE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FIN_EXPENSE_ITEM">
+    <Key>
+      <PropertyRef Name="EXP_ITEM_ID" />
+    </Key>
+    <Property Name="EXP_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EXP_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FIN_SUBJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_QUANTITY" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="FIN_LOAN_TRANACTION">
+    <Key>
+      <PropertyRef Name="TID" />
+    </Key>
+    <Property Name="TID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BL_ID" Type="Int64" />
+    <Property Name="TRANSACTION_TYPE" Type="Int32" />
+    <Property Name="PERIOD" Type="Int32" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="EVENT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PAYBACK_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="VA_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FIN_SUBJECT">
+    <Key>
+      <PropertyRef Name="FIN_SUBJECT_ID" />
+    </Key>
+    <Property Name="FIN_SUBJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUBJECT_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CATEGORY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUDGET_DAY" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_ACCOUNT">
+    <Key>
+      <PropertyRef Name="PLAN_ACCOUNT_ID" />
+    </Key>
+    <Property Name="PLAN_ACCOUNT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ACCOUNT_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="AMOUNT_PAID" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ACCOUNT_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ISDEBIT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="Int32" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CHECK_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT_PAYABLE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="BANKING_FEE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PAYEE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_BUDGET">
+    <Key>
+      <PropertyRef Name="PLAN_BUDGET_ID" />
+    </Key>
+    <Property Name="PLAN_BUDGET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BUDGET_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TND_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CONTRACT_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="BUDGET_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="BUDGET_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="BUDGET_WAGE_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="BUDGET_WAGE_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SYSTEM_MAIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SYSTEM_SUB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_CERT_ORDER_ITEM">
+    <Key>
+      <PropertyRef Name="CERT_ORD_ITEM_ID" />
+    </Key>
+    <Property Name="CERT_ORD_ITEM_ID" Type="Int64" Nullable="false" />
+    <Property Name="CERT_ORD_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ORDER_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ACCUMULTATE_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="WAGE_PRICE" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="PLAN_CONTRACT_PROCESS">
+    <Key>
+      <PropertyRef Name="CONTRACT_ID" />
+    </Key>
+    <Property Name="CONTRACT_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MATERIAL_BRAND" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_PRODUCTION" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MAINTENANCE_BOND" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MB_DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MB_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="PERFORMANCE_BOND" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PB_DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PB_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_COSTCHANGE_FORM">
+    <Key>
+      <PropertyRef Name="FORM_ID" />
+    </Key>
+    <Property Name="FORM_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK_ITEM" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK_QTY" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK_PRICE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK_OTHER" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REASON_CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="METHOD_CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="SETTLEMENT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REJECT_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="INQUIRY_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PLAN_COSTCHANGE_ITEM" Relationship="topmepModel.FK_PLAN_COS_REFERENCE_PLAN_COS" FromRole="PLAN_COSTCHANGE_FORM" ToRole="PLAN_COSTCHANGE_ITEM" />
+  </EntityType>
+  <EntityType Name="PLAN_COSTCHANGE_ITEM">
+    <Key>
+      <PropertyRef Name="ITEM_UID" />
+    </Key>
+    <Property Name="ITEM_UID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORM_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_QUANTITY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_COST" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EXCEL_ROW_ID" Type="Int64" />
+    <Property Name="TRANSFLAG" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PLAN_COSTCHANGE_FORM" Relationship="topmepModel.FK_PLAN_COS_REFERENCE_PLAN_COS" FromRole="PLAN_COSTCHANGE_ITEM" ToRole="PLAN_COSTCHANGE_FORM" />
+  </EntityType>
+  <EntityType Name="PLAN_DALIY_REPORT">
+    <Key>
+      <PropertyRef Name="REPORT_ID" />
+    </Key>
+    <Property Name="REPORT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="WEATHER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUMMARY" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SCENE_USER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUPERVISION_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_DR_ITEM">
+    <Key>
+      <PropertyRef Name="DR_ITEM_ID" />
+    </Key>
+    <Property Name="DR_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PLAN_ITEM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REPORT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FINISH_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="LAST_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_DR_NOTE">
+    <Key>
+      <PropertyRef Name="DR_NOTE_ID" />
+    </Key>
+    <Property Name="DR_NOTE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REPORT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SORT" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PLAN_DR_TASK">
+    <Key>
+      <PropertyRef Name="DR_TASK_ID" />
+    </Key>
+    <Property Name="REPORT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DR_TASK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRJ_UID" Type="Int32" />
+    <Property Name="TASK_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_DR_TEMPWORK">
+    <Key>
+      <PropertyRef Name="ORD_TEMPWORKER_ID" />
+    </Key>
+    <Property Name="ORD_TEMPWORKER_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REPORT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CHARGE_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WORKER_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="LAST_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DOC" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_DR_WORKER">
+    <Key>
+      <PropertyRef Name="DR_WORKER_ID" />
+    </Key>
+    <Property Name="DR_WORKER_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REPORT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PARA_KEY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WORKER_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WORKER_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="LAST_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION_FORM">
+    <Key>
+      <PropertyRef Name="EST_FORM_ID" />
+    </Key>
+    <Property Name="EST_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLUS_TAX" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TAX_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PAYMENT_TRANSFER" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PAYMENT_DEDUCTION" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PAID_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="FOREIGN_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="RETENTION_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="OTHER_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PREPAY_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SETTLEMENT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="Int32" />
+    <Property Name="TAX_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="INVOICE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="REJECT_DESC" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PAYEE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="INDIRECT_COST_TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PLAN_ESTIMATION_HOLDPAYMENT" Relationship="topmepModel.FK_PLAN_EST_REFERENCE_PLAN_EST" FromRole="PLAN_ESTIMATION_FORM" ToRole="PLAN_ESTIMATION_HOLDPAYMENT" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION_HOLDPAYMENT">
+    <Key>
+      <PropertyRef Name="HOLD_ID" />
+    </Key>
+    <Property Name="HOLD_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EST_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_ID" Type="Int64" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HOLD_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PLAN_ESTIMATION_FORM" Relationship="topmepModel.FK_PLAN_EST_REFERENCE_PLAN_EST" FromRole="PLAN_ESTIMATION_HOLDPAYMENT" ToRole="PLAN_ESTIMATION_FORM" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION_INVOICE">
+    <Key>
+      <PropertyRef Name="INVOICE_ID" />
+    </Key>
+    <Property Name="INVOICE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EST_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_NUMBER" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TAX" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DISCOUNT_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DISCOUNT_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION_ITEM">
+    <Key>
+      <PropertyRef Name="EST_ITEM_ID" />
+    </Key>
+    <Property Name="EST_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EST_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EST_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="EST_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="EST_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION_PAYMENT_TRANSFER">
+    <Key>
+      <PropertyRef Name="PAYMENT_ID" />
+    </Key>
+    <Property Name="PAYMENT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PAYMENT_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TRANSFER_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ESTIMATION_COUNT" Type="Int32" />
+    <Property Name="PAID_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="FEE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="HOLD_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CUR_HOLDAMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_ESTIMATION2PURCHASE">
+    <Key>
+      <PropertyRef Name="E2P_ID" />
+    </Key>
+    <Property Name="E2P_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EST_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_INDIRECT_COST">
+    <Key>
+      <PropertyRef Name="PKID" />
+    </Key>
+    <Property Name="PKID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_DESC" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="COST" Type="Decimal" Precision="15" Scale="3" />
+    <Property Name="PERCENTAGE" Type="Decimal" Precision="15" Scale="3" />
+    <Property Name="NOTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TND_PROJECT" Relationship="topmepModel.FK_PLAN_IND_REFERENCE_TND_PROJ" FromRole="PLAN_INDIRECT_COST" ToRole="TND_PROJECT" />
+  </EntityType>
+  <EntityType Name="PLAN_INVOICE">
+    <Key>
+      <PropertyRef Name="INVOICE_ID" />
+    </Key>
+    <Property Name="INVOICE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EST_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_NUMBER" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TAX" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DISCOUNT_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DISCOUNT_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_ITEM">
+    <Key>
+      <PropertyRef Name="PLAN_ITEM_ID" />
+    </Key>
+    <Property Name="PLAN_ITEM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_QUANTITY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MAN_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_CODE_1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SYSTEM_MAIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SYSTEM_SUB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="EXCEL_ROW_ID" Type="Int64" />
+    <Property Name="FORM_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BUDGET_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_FORM_QUANTITY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_COST" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TND_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MAN_FORM_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="MAN_SUPPLIER_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LEAD_TIME" Type="Decimal" Precision="5" Scale="1" />
+    <Property Name="DEL_FLAG" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="INQUIRY_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAN_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BUDGET_WAGE_RATIO" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="IN_CONTRACT" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_ITEM_DELIVERY">
+    <Key>
+      <PropertyRef Name="DELIVERY_ID" />
+    </Key>
+    <Property Name="DELIVERY_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DELIVERY_ORDER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DELIVERY_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_ITEM2_SUP_INQUIRY">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INQUIRY_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ISWAGE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_OTHER_PAYMENT">
+    <Key>
+      <PropertyRef Name="OTHER_PAYMENT_ID" />
+    </Key>
+    <Property Name="OTHER_PAYMENT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EST_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRACT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REASON" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CONTRACT_ID_FOR_REFUND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EST_FORM_ID_REFUND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EST_COUNT_REFUND" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PLAN_PAYMENT_TERMS">
+    <Key>
+      <PropertyRef Name="CONTRACT_ID" />
+    </Key>
+    <Property Name="CONTRACT_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_FREQUENCY" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="DATE_1" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="DATE_2" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="DATE_3" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="PAYMENT_TERMS" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="USANCE_CASH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USANCE_UP_TO_U_1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USANCE_UP_TO_U_2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="USANCE_UP_TO_U_DATE1" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="USANCE_UP_TO_U_DATE2" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="PAYMENT_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_CASH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_UP_TO_U_1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_UP_TO_U_2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PAYMENT_UP_TO_U_DATE1" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="PAYMENT_UP_TO_U_DATE2" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="USANCE_ADVANCE_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_ADVANCE_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_ADVANCE_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_ADVANCE_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_GOODS_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_GOODS_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_GOODS_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_GOODS_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_FINISHED_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_FINISHED_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_FINISHED_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_FINISHED_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_RETENTION_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_RETENTION_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_RETENTION_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="USANCE_RETENTION_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ADVANCE_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ADVANCE_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ADVANCE_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ADVANCE_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ESTIMATED_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ESTIMATED_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ESTIMATED_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_ESTIMATED_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_RETENTION_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_RETENTION_CASH_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_RETENTION_1_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="PAYMENT_RETENTION_2_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_PURCHASE_REQUISITION">
+    <Key>
+      <PropertyRef Name="PR_ID" />
+    </Key>
+    <Property Name="PR_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PRJ_UID" Type="Int32" />
+    <Property Name="RECIPIENT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARENT_PR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Int32" />
+    <Property Name="MEMO" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CAUTION" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_PURCHASE_REQUISITION_ITEM">
+    <Key>
+      <PropertyRef Name="PR_ITEM_ID" />
+    </Key>
+    <Property Name="PR_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NEED_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="NEED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="RECEIPT_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_SITE_BUDGET">
+    <Key>
+      <PropertyRef Name="SITE_BUDGET_ID" />
+    </Key>
+    <Property Name="SITE_BUDGET_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BUDGET_YEAR" Type="Int32" />
+    <Property Name="BUDGET_MONTH" Type="Int32" />
+    <Property Name="SUBJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="YEAR_SEQUENCE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_SUP_INQUIRY">
+    <Key>
+      <PropertyRef Name="INQUIRY_FORM_ID" />
+    </Key>
+    <Property Name="INQUIRY_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FORM_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_TEL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_FAX" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DUEDATE" Type="DateTime" Precision="3" />
+    <Property Name="REF_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ISWAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_SUP_INQUIRY_ITEM">
+    <Key>
+      <PropertyRef Name="INQUIRY_ITEM_ID" />
+    </Key>
+    <Property Name="INQUIRY_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INQUIRY_FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PLAN_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_QTY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_QTY_ORG" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNITPRICE_ORG" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="WAGE_PRICE" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="PLAN_TASK">
+    <Key>
+      <PropertyRef Name="TASK_ID" />
+    </Key>
+    <Property Name="TASK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRJ_ID" Type="Int32" />
+    <Property Name="PRJ_UID" Type="Int32" />
+    <Property Name="TASK_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="START_DATE" Type="DateTime" Precision="3" />
+    <Property Name="FINISH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENT_UID" Type="Int32" />
+    <Property Name="DURATION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ROOT_TAG" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_TASK_DONE">
+    <Key>
+      <PropertyRef Name="TASK_ID" />
+    </Key>
+    <Property Name="TASK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRJ_ID" Type="Int32" />
+    <Property Name="PRJ_UID" Type="Int32" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PLAN_TASK2MAPITEM">
+    <Key>
+      <PropertyRef Name="TASKUID" />
+    </Key>
+    <Property Name="TASKUID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PRJ_UID" Type="Int32" />
+    <Property Name="MAP_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_PK" Type="Int32" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PLAN_VALUATION_FORM">
+    <Key>
+      <PropertyRef Name="VA_FORM_ID" />
+    </Key>
+    <Property Name="VA_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="VALUATION_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="TAX_RATIO" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="TAX_AMOUNT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="RETENTION_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ADVANCE_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ADVANCE_PAYMENT_REFUND" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="OTHER_PAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="OTHER_PAYMENT_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="REPAYMENT" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="Int32" />
+  </EntityType>
+  <EntityType Name="REF_TYPE_MAIN">
+    <Key>
+      <PropertyRef Name="TYPE_CODE_ID" />
+    </Key>
+    <Property Name="TYPE_CODE_ID" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_1" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CODE_1_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_2" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="REF_TYPE_SUB">
+    <Key>
+      <PropertyRef Name="SUB_TYPE_ID" />
+    </Key>
+    <Property Name="SUB_TYPE_ID" Type="Int32" Nullable="false" />
+    <Property Name="TYPE_CODE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="Int32" />
+    <Property Name="TYPE_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_FUNCTION">
+    <Key>
+      <PropertyRef Name="FUNCTION_ID" />
+    </Key>
+    <Property Name="FUNCTION_ID" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="FUNCTION_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MODULE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_MODULE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FUNCTION_URI" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ISMENU" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_PRIVILEGE" Relationship="topmepModel.FK_SYS_PRIVILEGE_SYS_FUNCTION" FromRole="SYS_FUNCTION" ToRole="SYS_PRIVILEGE" />
+  </EntityType>
+  <EntityType Name="SYS_KEY_SERIAL">
+    <Key>
+      <PropertyRef Name="KEY_ID" />
+    </Key>
+    <Property Name="KEY_ID" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="KEY_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PREFIX" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="KEY_LEN" Type="Int32" />
+    <Property Name="KEY_NO" Type="Int64" />
+    <Property Name="QUICK_LEN" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SYS_MESSAGE">
+    <Key>
+      <PropertyRef Name="MSG_ID" />
+    </Key>
+    <Property Name="MSG_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FROM_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DISPLAY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL_LIST" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="BCC_MAIL_LIST" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SUBJECT" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MSG_BODY" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_PATH" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SEND_TIME" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_PARA">
+    <Key>
+      <PropertyRef Name="PARA_ID" />
+    </Key>
+    <Property Name="PARA_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FUNCTION_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FUNCTION_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FIELD_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KEY_FIELD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="VALUE_FIELD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_PRIVILEGE">
+    <Key>
+      <PropertyRef Name="PRIVILEGE_ID" />
+    </Key>
+    <Property Name="PRIVILEGE_ID" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ROLE_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="FUNCTION_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ACTION_1_RIGHT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ACTION_1_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_FUNCTION" Relationship="topmepModel.FK_SYS_PRIVILEGE_SYS_FUNCTION" FromRole="SYS_PRIVILEGE" ToRole="SYS_FUNCTION" />
+    <NavigationProperty Name="SYS_ROLE" Relationship="topmepModel.FK_SYS_PRIVILEGE_SYS_ROLE" FromRole="SYS_PRIVILEGE" ToRole="SYS_ROLE" />
+  </EntityType>
+  <EntityType Name="SYS_ROLE">
+    <Key>
+      <PropertyRef Name="ROLE_ID" />
+    </Key>
+    <Property Name="ROLE_ID" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ROLE_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_PRIVILEGE" Relationship="topmepModel.FK_SYS_PRIVILEGE_SYS_ROLE" FromRole="SYS_ROLE" ToRole="SYS_PRIVILEGE" />
+    <NavigationProperty Name="SYS_USER" Relationship="topmepModel.FK_SYS_USER_SYS_ROLE" FromRole="SYS_ROLE" ToRole="SYS_USER" />
+  </EntityType>
+  <EntityType Name="SYS_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ROLE_ID" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TEL" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TEL_EXT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MOBILE" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DEP_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="SYS_ROLE" Relationship="topmepModel.FK_SYS_USER_SYS_ROLE" FromRole="SYS_USER" ToRole="SYS_ROLE" />
+  </EntityType>
+  <EntityType Name="TND_FILE">
+    <Key>
+      <PropertyRef Name="FILE_ID" />
+    </Key>
+    <Property Name="FILE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_UPLOAD_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_ACTURE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_LOCATIOM" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_URL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_MAP_DEVICE">
+    <Key>
+      <PropertyRef Name="DEVIVE_ID" />
+    </Key>
+    <Property Name="DEVIVE_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LOC_DESC" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="QTY" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TND_MAP_FP">
+    <Key>
+      <PropertyRef Name="FP_ID" />
+    </Key>
+    <Property Name="FP_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_QTY_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_SET_CNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_MAP_FW">
+    <Key>
+      <PropertyRef Name="FW_ID" />
+    </Key>
+    <Property Name="FW_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_CNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_MAP_LCP">
+    <Key>
+      <PropertyRef Name="LCP_ID" />
+    </Key>
+    <Property Name="LCP_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_QTY_SET" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="WIRE_SET_CNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="WIRE_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="WIRE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="GROUND_WIRE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="GROUND_WIRE_QTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="GROUND_WIRE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_1_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_1_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_1_SET" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_1_TOTAL_LEN" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_2_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_2_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_2_SET" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_2_TOTAL_LEN" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_MAP_PEP">
+    <Key>
+      <PropertyRef Name="PEP_ID" />
+    </Key>
+    <Property Name="PEP_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="WIRE_QTY_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_SET_CNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WIRE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GROUND_WIRE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="GROUND_WIRE_QTY" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GROUND_WIRE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_MAP_PLU">
+    <Key>
+      <PropertyRef Name="PLU_ID" />
+    </Key>
+    <Property Name="PLU_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_COUNT_SET" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_SET_QTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_PROJECT">
+    <Key>
+      <PropertyRef Name="PROJECT_ID" />
+    </Key>
+    <Property Name="PROJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ENG_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CONTRUCTION_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="LOCATION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_TEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_FAX" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DUE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SCHDL_OFFER_DATE" Type="DateTime" Precision="3" />
+    <Property Name="OWNER_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_FILE_NAME" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="START_ROW_NO" Type="Int32" />
+    <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="WAGE_MULTIPLIER" Type="Decimal" Precision="5" Scale="0" />
+    <NavigationProperty Name="PLAN_INDIRECT_COST" Relationship="topmepModel.FK_PLAN_IND_REFERENCE_TND_PROJ" FromRole="TND_PROJECT" ToRole="PLAN_INDIRECT_COST" />
+  </EntityType>
+  <EntityType Name="TND_PROJECT_FORM">
+    <Key>
+      <PropertyRef Name="FORM_ID" />
+    </Key>
+    <Property Name="FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FORM_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_TEL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OWNER_FAX" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DUEDATE" Type="DateTime" Precision="3" />
+    <Property Name="REF_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ISWAGE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_PROJECT_FORM_ITEM">
+    <Key>
+      <PropertyRef Name="FORM_ITEM_ID" />
+    </Key>
+    <Property Name="FORM_ITEM_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FORM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_QTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ITEM_QTY_ORG" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ITEM_UNITPRICE_ORG" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TND_PROJECT_ITEM">
+    <Key>
+      <PropertyRef Name="PROJECT_ITEM_ID" />
+    </Key>
+    <Property Name="PROJECT_ITEM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ITEM_UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_QUANTITY" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_UNIT_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="MAN_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ITEM_REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE_CODE_1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_CODE_2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUB_TYPE_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SYSTEM_MAIN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SYSTEM_SUB" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="SHEET_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ROW_ID" Type="Int64" />
+    <Property Name="QUO_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DEL_FLAG" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_SUP_CONTACT_INFO">
+    <Key>
+      <PropertyRef Name="CONTACT_ID" />
+    </Key>
+    <Property Name="CONTACT_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_MATERIAL_ID" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_MOBIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_SUP_MATERIAL_RELATION">
+    <Key>
+      <PropertyRef Name="RELATION_ID" />
+    </Key>
+    <Property Name="RELATION_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLIER_ID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_MAIN" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_SUB" Type="Int32" />
+    <Property Name="SUPPLY_NOTE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="STOP_DELIVERY" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TND_SUPPLIER">
+    <Key>
+      <PropertyRef Name="SUPPLIER_ID" />
+    </Key>
+    <Property Name="SUPPLIER_ID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_ID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="COMPANY_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_MOBILE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLY_NOTE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REGISTER_ADDRESS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACT_ADDRESS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_MAIN" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE_SUB" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TND_TASKASSIGN">
+    <Key>
+      <PropertyRef Name="TASK_ID" />
+    </Key>
+    <Property Name="TASK_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TASK_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TASK_ITEM" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FINISH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TND_WAGE">
+    <Key>
+      <PropertyRef Name="WAGE_ID" />
+    </Key>
+    <Property Name="WAGE_ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RATIO" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="PRICE" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="WF_PORCESS_TASK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="RID" Type="Int64" Nullable="false" />
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="NOTE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACTIVITY_TYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SEQ_ID" Type="Int32" />
+    <Property Name="DEP_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DECISION_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WF_PROCESS">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="PID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PROCESS_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROCESS_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="FORM_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WF_PROCESS_ACTIVITY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PID" Type="Int64" />
+    <Property Name="ACTIVITY_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ACTIVITY_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ACTIVITY_TYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="SEQ_ID" Type="Int32" />
+    <Property Name="METHOD_URL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DEP_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="WF_PROCESS_REQUEST">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="RID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="REQ_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_USER_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="PID" Type="Int64" />
+    <Property Name="DATA_KEY" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CURENT_STATE" Type="Int64" />
+  </EntityType>
+  <EntityType Name="PLAN_CERT_ORDER">
+    <Key>
+      <PropertyRef Name="INQUIRY_FORM_ID" />
+    </Key>
+    <Property Name="CERT_ORD_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="INQUIRY_FORM_ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SUPPLIER_ID" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
+    <Property Name="STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_MAP_FW">
+    <Key>
+      <PropertyRef Name="FW_ID" />
+    </Key>
+    <Property Name="FW_ID" Type="Int64" Nullable="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_CNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_SET" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_MAP_PLU">
+    <Key>
+      <PropertyRef Name="PLU_ID" />
+    </Key>
+    <Property Name="PLU_ID" Type="Int64" Nullable="false" />
+    <Property Name="PROJECT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT_ITEM_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAP_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BUILDING_NO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SECONDARY_SIDE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="PIPE_COUNT_SET" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_SET_QTY" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PIPE_TOTAL_LENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATE_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EXCEL_ITEM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ITEM_DESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_PLAN_COS_REFERENCE_PLAN_COS">
+    <End Type="topmepModel.PLAN_COSTCHANGE_FORM" Role="PLAN_COSTCHANGE_FORM" Multiplicity="0..1" />
+    <End Type="topmepModel.PLAN_COSTCHANGE_ITEM" Role="PLAN_COSTCHANGE_ITEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLAN_COSTCHANGE_FORM">
+        <PropertyRef Name="FORM_ID" />
+      </Principal>
+      <Dependent Role="PLAN_COSTCHANGE_ITEM">
+        <PropertyRef Name="FORM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PLAN_EST_REFERENCE_PLAN_EST">
+    <End Type="topmepModel.PLAN_ESTIMATION_FORM" Role="PLAN_ESTIMATION_FORM" Multiplicity="0..1" />
+    <End Type="topmepModel.PLAN_ESTIMATION_HOLDPAYMENT" Role="PLAN_ESTIMATION_HOLDPAYMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PLAN_ESTIMATION_FORM">
+        <PropertyRef Name="EST_FORM_ID" />
+      </Principal>
+      <Dependent Role="PLAN_ESTIMATION_HOLDPAYMENT">
+        <PropertyRef Name="EST_FORM_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PLAN_IND_REFERENCE_TND_PROJ">
+    <End Type="topmepModel.TND_PROJECT" Role="TND_PROJECT" Multiplicity="0..1" />
+    <End Type="topmepModel.PLAN_INDIRECT_COST" Role="PLAN_INDIRECT_COST" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TND_PROJECT">
+        <PropertyRef Name="PROJECT_ID" />
+      </Principal>
+      <Dependent Role="PLAN_INDIRECT_COST">
+        <PropertyRef Name="PROJECT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIVILEGE_SYS_FUNCTION">
+    <End Type="topmepModel.SYS_FUNCTION" Role="SYS_FUNCTION" Multiplicity="0..1" />
+    <End Type="topmepModel.SYS_PRIVILEGE" Role="SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_FUNCTION">
+        <PropertyRef Name="FUNCTION_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="FUNCTION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_PRIVILEGE_SYS_ROLE">
+    <End Type="topmepModel.SYS_ROLE" Role="SYS_ROLE" Multiplicity="0..1" />
+    <End Type="topmepModel.SYS_PRIVILEGE" Role="SYS_PRIVILEGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_PRIVILEGE">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SYS_USER_SYS_ROLE">
+    <End Type="topmepModel.SYS_ROLE" Role="SYS_ROLE" Multiplicity="0..1" />
+    <End Type="topmepModel.SYS_USER" Role="SYS_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYS_ROLE">
+        <PropertyRef Name="ROLE_ID" />
+      </Principal>
+      <Dependent Role="SYS_USER">
+        <PropertyRef Name="ROLE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AggregatedCounter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="Int64" Nullable="false" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Counter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="Int16" Nullable="false" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Hash">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Field" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="7" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="StateName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="InvocationData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Arguments" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="JobParameter" Relationship="topmepModel.FK_HangFire_JobParameter_Job" FromRole="Job" ToRole="JobParameter" />
+    <NavigationProperty Name="State" Relationship="topmepModel.FK_HangFire_State_Job" FromRole="Job" ToRole="State" />
+  </EntityType>
+  <EntityType Name="JobParameter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Job" Relationship="topmepModel.FK_HangFire_JobParameter_Job" FromRole="JobParameter" ToRole="Job" />
+  </EntityType>
+  <EntityType Name="JobQueue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="Queue" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FetchedAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="List">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Schema">
+    <Key>
+      <PropertyRef Name="Version" />
+    </Key>
+    <Property Name="Version" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Server">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastHeartbeat" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Score" Type="Double" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ExpireAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Reason" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Job" Relationship="topmepModel.FK_HangFire_State_Job" FromRole="State" ToRole="Job" />
+  </EntityType>
+  <Association Name="FK_HangFire_JobParameter_Job">
+    <End Type="topmepModel.Job" Role="Job" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="topmepModel.JobParameter" Role="JobParameter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobParameter">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HangFire_State_Job">
+    <End Type="topmepModel.Job" Role="Job" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="topmepModel.State" Role="State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
