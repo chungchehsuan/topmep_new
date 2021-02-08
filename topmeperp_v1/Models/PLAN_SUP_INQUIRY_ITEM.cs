@@ -50,6 +50,8 @@ public partial class PLAN_SUP_INQUIRY_ITEM
 
     public Nullable<decimal> WAGE_PRICE { get; set; }
 
+    public Nullable<int> ACCUMULATE_QTY { get; set; }
+
 }
 
 }

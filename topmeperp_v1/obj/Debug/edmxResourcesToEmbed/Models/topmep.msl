@@ -716,6 +716,7 @@
     <EntitySetMapping Name="PLAN_SUP_INQUIRY_ITEM">
       <EntityTypeMapping TypeName="topmepModel.PLAN_SUP_INQUIRY_ITEM">
         <MappingFragment StoreEntitySet="PLAN_SUP_INQUIRY_ITEM">
+          <ScalarProperty Name="ACCUMULATE_QTY" ColumnName="ACCUMULATE_QTY" />
           <ScalarProperty Name="WAGE_PRICE" ColumnName="WAGE_PRICE" />
           <ScalarProperty Name="MODIFY_DATE" ColumnName="MODIFY_DATE" />
           <ScalarProperty Name="MODIFY_ID" ColumnName="MODIFY_ID" />

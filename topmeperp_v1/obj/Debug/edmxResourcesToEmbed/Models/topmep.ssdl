@@ -711,6 +711,7 @@ warning 6002: The table/view 'topmep.dbo.PLAN_CERT_ORDER' does not have a primar
     <Property Name="MODIFY_ID" Type="varchar" MaxLength="30" />
     <Property Name="MODIFY_DATE" Type="datetime" />
     <Property Name="WAGE_PRICE" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="ACCUMULATE_QTY" Type="int" />
   </EntityType>
   <EntityType Name="PLAN_TASK">
     <Key>

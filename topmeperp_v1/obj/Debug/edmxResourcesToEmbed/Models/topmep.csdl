@@ -819,6 +819,7 @@
     <Property Name="MODIFY_ID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="MODIFY_DATE" Type="DateTime" Precision="3" />
     <Property Name="WAGE_PRICE" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ACCUMULATE_QTY" Type="Int32" />
   </EntityType>
   <EntityType Name="PLAN_TASK">
     <Key>

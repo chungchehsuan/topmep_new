@@ -40,6 +40,7 @@
 <div class="queryTable">
     <form method="post" action="AddItem">
         <input type="hidden" id="formID" name="formID" value=@ViewBag.projectID>
+        <input type="hidden" id="itemlst" name="itemlst" value=@ViewBag.lst>
         <table>
             <tr>
                 <th>NO.</th>
@@ -60,24 +61,24 @@
             @foreach (var item in ViewBag.lst)
             {
                 itemlst.Add(new topmeperp.Models.PLAN_CERT_ORDER_ITEM { PLAN_ITEM_ID = @item.PLAN_ITEM_ID });
-            <tr>
-                <td data-th="NUM"><input type="text" name="plan_item_id" id="plan_item_id@(i)" value="@item.PLAN_ITEM_ID" readonly></td>
-                <td data-th="項次" id="項次@(i)"></td>
-                <td data-th="項目説明">@item.ITEM_DESC</td>
-                <td data-th="單位">m</td>
-                <td data-th="合約數量">@item.ITEM_QTY</td>
-                <td data-th="單價"><input type="text" name="unit_price" id="單價@(i)" value="@item.ITEM_UNIT_PRICE" readonly></td>
-                <td data-th="前期數量"></td>
-                <td data-th="本期數量"><input type="text" name="qty" id="@(i)" oninput="updateValue(this.id,this.value);" value=0></td>
-                <td data-th="本期金額" id="本期金額@(i)"></td>
-                <td data-th="纍計數量"></td>
-                <td data-th="纍計金額"></td>
-                <td data-th="纍計%">%</td>
-                <td type="hidden"><input type="hidden" id="itemID" name="itemID" value="@item.ITEM_ID"></td>
-                <td type="hidden"><input type="hidden" id="type" name="type" value="@item.TYPE_CODE"></td>
-                <td type="hidden"><input type="hidden" id="subType" name="subType" value="@item.SUB_TYPE_CODE"></td>
-                <td type="hidden"><input type="hidden" id="desc" name="desc" value="@item.ITEM_DESC"></td>
-            </tr>
+                <tr>
+                    <td data-th="NUM"><input type="text" name="plan_item_id" id="plan_item_id@(i)" value="@item.PLAN_ITEM_ID" readonly></td>
+                    <td data-th="項次" id="項次@(i)"></td>
+                    <td data-th="項目説明">@item.ITEM_DESC</td>
+                    <td data-th="單位">m</td>
+                    <td data-th="合約數量">@item.ITEM_QTY</td>
+                    <td data-th="單價"><input type="text" name="unit_price" id="單價@(i)" value="@item.ITEM_UNIT_PRICE" readonly></td>
+                    <td data-th="前期數量"></td>
+                    <td data-th="本期數量"><input type="text" name="qty" id="@(i)" oninput="updateValue(this.id,this.value);" value=0></td>
+                    <td data-th="本期金額" id="本期金額@(i)"></td>
+                    <td data-th="纍計數量"><input type="text" name="acc_qty" id="纍計數量@(i)" value="@item.ACCUMULATE_QTY" readonly></td>
+                    <td data-th="纍計金額"></td>
+                    <td data-th="纍計%">%</td>
+                    <td type="hidden"><input type="hidden" id="itemID" name="itemID" value="@item.ITEM_ID"></td>
+                    <td type="hidden"><input type="hidden" id="type" name="type" value="@item.TYPE_CODE"></td>
+                    <td type="hidden"><input type="hidden" id="subType" name="subType" value="@item.SUB_TYPE_CODE"></td>
+                    <td type="hidden"><input type="hidden" id="desc" name="desc" value="@item.ITEM_DESC"></td>
+                </tr>
                 i++;
             }
         </table>

@@ -31,6 +31,9 @@ namespace topmeperp.Controllers
             }
             ViewBag.projectId = projectID;
             ViewBag.lst = lst;
+            foreach(var item in lst) {
+                System.Diagnostics.Debug.WriteLine("\n"+item.CERT_ORD_ID);
+            }
             return View();
         }
 
@@ -58,6 +61,10 @@ namespace topmeperp.Controllers
             return View();
         }
 
+        public ActionResult Review() {
+            return View();
+        }
+
         public ActionResult AddItem()
         {
 
@@ -77,7 +84,7 @@ namespace topmeperp.Controllers
         }
 
         [HttpPost]
-        public string AddItem(FormCollection f)
+        public ActionResult AddItem(FormCollection f)
         {
             var inquiry = new topmeperp.Models.PLAN_SUP_INQUIRY();
             var formID = Request["formID"];
@@ -90,8 +97,8 @@ namespace topmeperp.Controllers
             {
                 string sql;
                 inquiry = context.PLAN_SUP_INQUIRY.SqlQuery("SELECT * FROM PLAN_SUP_INQUIRY WHERE INQUIRY_FORM_ID = '"+formID+"'").ToList().First();
-                sql = "INSERT INTO PLAN_CERT_ORDER (CERT_ORD_ID,INQUIRY_FORM_ID,SUPPLIER_ID,PROJECT_ID) " +
-                    "VALUES('"+ordKey+"','" + inquiry.INQUIRY_FORM_ID + "','" + inquiry.SUPPLIER_ID + "','" + inquiry.PROJECT_ID + "')";
+                sql = "INSERT INTO PLAN_CERT_ORDER (CERT_ORD_ID,INQUIRY_FORM_ID,SUPPLIER_ID,PROJECT_ID,CREATE_DATE) " +
+                    "VALUES('"+ordKey+"','" + inquiry.INQUIRY_FORM_ID+"-"+ordKey + "','" + inquiry.SUPPLIER_ID + "','" + inquiry.PROJECT_ID +"','"+ DateTime.Now.ToString()+"')";
                 try
                 {
                         
@@ -141,6 +148,9 @@ namespace topmeperp.Controllers
                             ORDER_QTY = nums[i],
                             PLAN_ITEM_ID = plan_item_ids[i]
                         });
+                        string updateSql = "UPDATE PLAN_SUP_INQUIRY_ITEM SET ACCUMULATE_QTY = ACCUMULATE_QTY + " 
+                            + nums[i]+ " WHERE INQUIRY_FORM_ID = '"+formID +"' and PLAN_ITEM_ID = '"+plan_item_ids[i]+"'";
+                        context.Database.ExecuteSqlCommand(updateSql);
                     }
                     //context.PLAN_CERT_ORDER_ITEM.Add(test2);
                     //var x=0;
@@ -156,9 +166,10 @@ namespace topmeperp.Controllers
 
                 //generate random 64 int ID
                 long testID = generate_id();
-
+                
                 string orderinfo = "{CERT_OrderID: " + order.CERT_ORD_ID + " FormID: " + inquiry.INQUIRY_FORM_ID + " Supplier: " + inquiry.SUPPLIER_ID + " ProjID: " + inquiry.PROJECT_ID;
-                return "Item added in " + formID + "\n" + nums[0] + ", " + nums[1] + sql+"\n("+testID+":"+ordKey+")"+plan_item_ids[0];
+                //return "Item added in " + formID + "\n" + nums[0] + ", " + nums[1] + sql+"\n("+testID+":"+ordKey+")"+plan_item_ids[0];
+                return RedirectToAction("Index/"+inquiry.PROJECT_ID);
             }
         }
 
@@ -168,5 +179,7 @@ namespace topmeperp.Controllers
             long id = BitConverter.ToInt64(gb, 0);
             return id;
         }
+
+
     }
 }
